@@ -108,4 +108,8 @@ describe('factorial', () => {
     it('should return 6 if the number is 3', () => {
         expect(factorial(3)).toBe(6)
     })
+
+    it('should return undefined if the nr is negative', () => {
+        expect(factorial(-1)).toBeUndefined()
+    })
 })
