@@ -1,5 +1,5 @@
 import {describe, test, it, expect} from "vitest"
-import { fizzBuzz, max } from "../intro"
+import { calculateAverage, fizzBuzz, max } from "../intro"
 
 describe('max', () => {
     it('should return the first argument if it is greater', () => {
@@ -73,3 +73,16 @@ describe('fizzBuzz', () => {
     })
 })
 
+describe('calculateAverage', () => {
+    it('should return NaN if given an empty array', () => {
+        const arr = []
+
+        const result = calculateAverage(arr)
+
+        expect(result).toBeNaN()
+    })
+
+    it('should calculate the average of an array with a single element', () => {
+        expect(calculateAverage([1])).toBe(1)
+    })
+})
