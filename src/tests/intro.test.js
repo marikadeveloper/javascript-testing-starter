@@ -48,7 +48,7 @@ describe('fizzBuzz', () => {
         expect(result).toBe('FizzBuzz')
     })
 
-    it('should return Fizz if n is divisible by 3', () => {
+    it('should return Fizz if n is only divisible by 3', () => {
         const n = 9
 
         const result = fizzBuzz(n)
@@ -56,11 +56,20 @@ describe('fizzBuzz', () => {
         expect(result).toBe('Fizz')
     })
 
-    it('should return Buzz if n is divisible by 5', () => {
+    it('should return Buzz if n is only divisible by 5', () => {
         const n = 5
 
         const result = fizzBuzz(n)
 
         expect(result).toBe('Buzz')
     })
+
+    it('should return n as a string if n is not divisible by 5 or 3', () => {
+        const n = 7
+
+        const result = fizzBuzz(n)
+
+        expect(result).toBe('7')
+    })
 })
+
