@@ -17,3 +17,9 @@ export function calculateAverage(numbers) {
   const sum = numbers.reduce((acc, curr) => acc + curr, 0)
   return sum / numbers.length
 }
+
+export function factorial(number) {
+  if (number <= 1) return 1
+
+  return number * factorial(number - 1)
+}
