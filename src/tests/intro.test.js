@@ -85,4 +85,12 @@ describe('calculateAverage', () => {
     it('should calculate the average of an array with a single element', () => {
         expect(calculateAverage([1])).toBe(1)
     })
+
+    it('should calculate the average of an array of two elements', () => {
+        expect(calculateAverage([1,2])).toBe(1.5)
+    })
+
+    it('should calculate the average of an array of three elements', () => {
+        expect(calculateAverage([1,2,3])).toBe(2)
+    })
 })

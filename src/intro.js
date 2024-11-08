@@ -14,5 +14,6 @@ export function fizzBuzz(n) {
 export function calculateAverage(numbers) {
   if (!numbers.length) return NaN;
 
-  return numbers[0]
+  const sum = numbers.reduce((acc, curr) => acc + curr, 0)
+  return sum / numbers.length
 }
